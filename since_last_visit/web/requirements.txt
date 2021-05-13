@@ -1,0 +1,6 @@
+streamlit==0.82.0
+watchdog==2.1.1
+arrow==1.1.0
+XlsxWriter==1.4.3
+pandas==1.2.4
+d3b_redcap_api @ git+https://github.com/d3b-center/d3b-redcap-api-python.git

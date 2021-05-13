@@ -1,0 +1,4 @@
+PySimpleGUI
+arrow
+XlsxWriter
+d3b_redcap_api @ git+https://github.com/d3b-center/d3b-redcap-api-python.git
