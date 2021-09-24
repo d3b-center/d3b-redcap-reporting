@@ -18,7 +18,7 @@ st.set_page_config(
 
 @st.cache(ttl=600, show_spinner=False)
 def get_date_fields(api_token):
-    r = REDCapStudy("https://redcap-api.chop.edu/api/", api_token)
+    r = REDCapStudy("https://redcap.chop.edu/api/", api_token)
     with st.spinner("Fetching project metadata..."):
         date_fields = sorted(
             f["field_name"]
@@ -30,7 +30,7 @@ def get_date_fields(api_token):
 
 @st.cache(ttl=600, show_spinner=False)
 def get_records(api_token, date_fields):
-    r = REDCapStudy("https://redcap-api.chop.edu/api/", api_token)
+    r = REDCapStudy("https://redcap.chop.edu/api/", api_token)
     with st.spinner("Fetching project records..."):
         return r.get_records(fields=date_fields)
 
